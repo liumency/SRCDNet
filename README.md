@@ -12,8 +12,6 @@ The **SRCDNet** is designed to learn and predict change maps from bi-temporal im
 
 - Pytorch 1.2.0
 
-  ​
-
 ## Datasets
 
 - Download the [BCDD Dataset](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html)
@@ -42,7 +40,6 @@ The data folder is structured as follows:
 │   └── 
 ...
 ```
-
 
 
 ## Train Examples 
