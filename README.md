@@ -1,8 +1,6 @@
 # SRCDNet
 
-This is a [pytorch](http://pytorch.org/) implementation of [SRCDNet](https://arxiv.org/abs/2103.00188).
-
-Super-resolution-based Change Detection Network with Stacked Attention Module for Images with Different Resolutions
+The pytorch implementation for "[Super-resolution-based Change Detection Network with Stacked Attention Module for Images with Different Resolutions](https://arxiv.org/abs/2103.00188) ". 
 
 
 
@@ -30,8 +28,6 @@ Please cite our paper if you use this code in your own work:
       primaryClass={eess.IV}
 }
 ```
-
-
 
 ### Acknowledgment
 
