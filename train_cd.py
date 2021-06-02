@@ -28,8 +28,7 @@ seed_torch(2021)
 
 if __name__ == '__main__':
     mloss = 0
-    print("ratio, kernel:", args.ratio, args.kernel)
-    print("scale:", args.upscale_factor)
+
 
     # load data
     train_set = LoadDatasetFromFolder_CD(args, args.hr1_train, args.hr2_train, args.lab_train)
