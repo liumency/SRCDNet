@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
         if val_loss > mloss or epoch==1:
             mloss = val_loss
-            torch.save(CDNet.state_dict(),  args.model_dir+'netCD_epoch_%d.pth' % (epoch+args.pre_num ))
+            torch.save(CDNet.state_dict(),  args.model_dir+'netCD_epoch_%d.pth' % (epoch ))
 
         results['train_SR'].append(running_results['SR_loss'] / running_results['batch_sizes'])
         results['train_CD'].append(running_results['CD_loss'] / running_results['batch_sizes'])
