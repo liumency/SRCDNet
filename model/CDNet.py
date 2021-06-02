@@ -42,7 +42,7 @@ class SpatialAttention(nn.Module):
 
 
 class CBAM(nn.Module):
-    def __init__(self, in_planes, ratio, kernel_size):
+    def __init__(self, in_planes, ratio=8, kernel_size=3):
         super(CBAM, self).__init__()
         self.ca = ChannelAttention(in_planes, ratio)
         self.sa = SpatialAttention(kernel_size)
@@ -56,7 +56,6 @@ class CDNet(nn.Module):
     def __init__(self, args, backbone='resnet18', output_stride=16, f_c=64, freeze_bn=False, in_c=3):
         super(CDNet, self).__init__()
         BatchNorm = nn.BatchNorm2d
-        self.cbam_dist = args.cbam_dist
 
         self.transform = get_transform(convert=True, normalize=True)
 
