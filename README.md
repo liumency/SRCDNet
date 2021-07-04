@@ -1,6 +1,6 @@
 ## SRCDNet
 
-The pytorch implementation for "[Super-resolution-based Change Detection Network with Stacked Attention Module for Images with Different Resolutions](https://arxiv.org/abs/2103.00188) ", the work have been accepted by IEEE Transactions on Geoscience and Remote Sensing.  
+The pytorch implementation for "[Super-resolution-based Change Detection Network with Stacked Attention Module for Images with Different Resolutions](https://ieeexplore.ieee.org/document/9472869) " on IEEE Transactions on Geoscience and Remote Sensing.  
 
 The **SRCDNet** is designed to learn and predict change maps from bi-temporal images with different resolutions, which can be neatly turned into a **CDNet** and applied to images without any resolution difference.
 
@@ -100,17 +100,18 @@ python train_cd.py
 
 ## Citation
 
-Please cite our paper if you use this code in your own work:
+Please cite our paper if you use this code in your work:
 
 ```
-@misc{liu2021superresolutionbased,
-      title={Super-resolution-based Change Detection Network with Stacked Attention Module for Images with Different Resolutions}, 
-      author={Mengxi Liu and Qian Shi and Andrea Marinoni and Da He and Xiaoping Liu and Liangpei Zhang},
-      year={2021},
-      eprint={2103.00188},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
-}
+@ARTICLE{liu2021super,
+  author={Liu, Mengxi and Shi, Qian and Marinoni, Andrea and He, Da and Liu, Xiaoping and Zhang, Liangpei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Super-Resolution-Based Change Detection Network With Stacked Attention Module for Images With Different Resolutions}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-18},
+  doi={10.1109/TGRS.2021.3091758}}
 ```
 
 
