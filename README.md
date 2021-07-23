@@ -14,7 +14,7 @@ The **SRCDNet** is designed to learn and predict change maps from bi-temporal im
 
 ## Datasets
 
-- Download the [BCDD Dataset](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html)
+- Download the [BCDD Dataset](http://gpcv.whu.edu.cn/data/building_dataset.html)
 - Download the [CDD Dataset](https://drive.google.com/file/d/1GX656JqqOyBi_Ef0w65kDGVto-nHrNs9/edit)
 
 Since the intial BCDD and CDD dataset only contains bi-temporal images with the same resolution, in our experiment, images of the latter phase are down-samplinged by 4 and 8 times to simulate resolution difference of 4 and 8 times (4x and 8x), respectively. 
