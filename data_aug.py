@@ -67,14 +67,13 @@ def creat_dataset(mode='augment'):
         print("%s: sampling from %s..." % (datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S"), image_sets[i]))
         count = 0
         while count < image_each:
-            random_width = 0
-            random_height = 0
             src_roi1 = src_img1[0: img_h, 0: img_w, :]  
             src_roi2 = src_img2[0: img_h, 0: img_w, :] 
             label_roi = label_img[0: img_h, 0: img_w]  
 
             if mode == 'augment':
                 src_roi1, src_roi2, label_roi = rotate(src_roi1, src_roi2, label_roi, np.random.randint(0, 30)) 
+                # src_roi1, src_roi2, label_roi = rotate(src_roi1, src_roi2, label_roi, np.random.randint(-30, 0)) 
 
                 cv2.imwrite('../Data/BCDD/train_aug/time1/%05d.tif' % (g_count+8000), cv2.cvtColor(src_roi1, cv2.COLOR_BGR2RGB))
                 cv2.imwrite('../Data/BCDD/train_aug/time2/%05d.tif' % (g_count+8000), cv2.cvtColor(src_roi2, cv2.COLOR_BGR2RGB))
