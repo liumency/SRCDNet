@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 import os
 
 def is_image_file(filename):
-    return any(filename.endswith(extension) for extension in ['.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG'])
+    return any(filename.endswith(extension) for extension in ['.tif','.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG'])
 
 def calMetric_iou(predict, label):
     tp = np.sum(np.logical_and(predict == 1, label == 1))
