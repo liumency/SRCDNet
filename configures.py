@@ -10,7 +10,7 @@ parser.add_argument('--val_batchsize', default=32, type=int, help='batchsize for
 parser.add_argument('--num_workers', default=24, type=int, help='num_workers')
 parser.add_argument('--n_class', default=2, type=int, help='number of class')
 parser.add_argument('--gpu_id', default="0", type=str, help='which gpu to run.')
-parser.add_argument('--suffix', default=['.png','.jpg'], type=list, help='the suffix of the image files.')
+parser.add_argument('--suffix', default=['.tif','.png','.jpg'], type=list, help='the suffix of the image files.')
 parser.add_argument('--img_size', default=256, type=int, help='batchsize for validation')
 parser.add_argument('--lr', type=float, default=0.0001, help='initial learning rate for CDNet')
 parser.add_argument('--w_cd', type=float, default=0.001, help='factor to balance the weight of CD loss in Generator loss')
